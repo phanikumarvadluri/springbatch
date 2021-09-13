@@ -43,6 +43,8 @@ public class LoadController {
 		System.out.println("Job Execution"+run);
 		System.out.println(run.getStatus());
 
+		System.out.println("Loading Ended.....");
+
 		return run.getStatus();
 
 	}
