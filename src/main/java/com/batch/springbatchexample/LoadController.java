@@ -31,6 +31,9 @@ public class LoadController {
 	@GetMapping
 	public BatchStatus load() throws JobExecutionAlreadyRunningException, JobRestartException,
 			JobInstanceAlreadyCompleteException, JobParametersInvalidException {
+		
+		
+		System.out.println("Loading started.....");
 
 		Map<String, JobParameter> map = new HashMap<>();
 		map.put("time", new JobParameter(System.currentTimeMillis()));
